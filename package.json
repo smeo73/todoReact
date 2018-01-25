@@ -4,22 +4,23 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --hot"
+    "encore.dev": "encore dev",
+    "encore.dev-server": "encore dev-server --hot",
+    "encore.prod": "encore production",
+    "encore.watch": "encore dev --watch"
   },
-  "author": "mbaechtel",
-  "license": "ISC",
+  "author": "pvesin",
+  "license": "MIT",
   "dependencies": {
-    "babel-core": "^6.26.0",
+    "@symfony/webpack-encore": "^0.15.1",
     "babel-loader": "^7.1.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2",
-    "react-redux": "^5.0.4",
-    "react-router": "^4.0.0",
-    "react-router-dom": "^4.0.0",
-    "redux": "^3.6.0",
-    "webpack": "^2.3.2",
-    "webpack-dev-server": "^2.4.2"
+    "extract-text-webpack-plugin": "^3.0.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2"
   }
 }
